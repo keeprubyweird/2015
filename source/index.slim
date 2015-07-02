@@ -1,0 +1,51 @@
+---
+title: "Keep Ruby Weird 2015 • Austin, Texas"
+---
+
+article#speakers
+  header.article-header Speakers
+  ul.speakers
+    li
+      = link_to "https://twitter.com/sandimetz", class: "speaker" do
+        = image_tag "sandi-metz.jpg", class: "speaker-photo"
+        h2.speaker-name Sandi Metz
+        h5.speaker-role Keynote
+    li
+      = link_to "https://twitter.com/tenderlove", class: "speaker" do
+        = image_tag "aaron-patterson.jpg", class: "speaker-photo"
+        h2.speaker-name Aaron Patterson
+        h5.speaker-role Emcee
+    li
+      = link_to "https://twitter.com/AIRBUD", class: "speaker" do
+        = image_tag "air-bud.jpg", class: "speaker-photo"
+        h2.speaker-name Air Bud
+        h5.speaker-role Dog
+  .copy
+    markdown:
+      We’re inviting speakers and running a CFP until July 31st for the rest of our speaking slots. Interested?
+  footer.article-footer
+    = link_to "Call for Proposals", "cfp.html", class: "btn"
+
+article#schedule
+  header.article-header Schedule
+  .copy
+    markdown:
+      We can’t release a schedule until we select our lineup, but we can say this: we’re adding a second day this year. There will be sandwiches.
+
+article#sponsors
+  header.article-header Sponsors
+  ul.sponsors
+    li
+      = link_to "http://getharvest.com" do
+        = image_tag "harvest.png", alt: "Harvest"
+    li
+      = link_to "http://heroku.com" do
+        = image_tag "heroku.png", alt: "Heroku"
+    li
+      = link_to "http://sharethrough.com" do
+        = image_tag "sharethrough.png", alt: "Sharethrough"
+    li
+      = link_to "http://thoughtbot.com" do
+        = image_tag "thoughtbot.png", alt: "thoughtbot"
+  footer.article-footer
+    = link_to "Sponsor KRW2015", "prospectus.html", class: "btn"

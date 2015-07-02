@@ -1,0 +1,33 @@
+.footer {
+  background-color: $pink;
+  background-image: image-url("noise.png");
+  margin-bottom: $fixed-footer-height;
+  padding: ($base-spacing * 2) $base-spacing;
+  position: relative;
+  z-index: 1;
+
+  .nav a {
+    color: $white;
+  }
+
+  &:nth-of-type(2) {
+    background-color: darken($pink, 2%);
+  }
+
+  .logo {
+    height: 12rem;
+  }
+}
+
+.fixed-footer {
+  @include position(fixed, null 0 0);
+  background-color: shade($pink, 5%);
+  height: $fixed-footer-height;
+  z-index: 0;
+}
+
+.weirdo {
+  @include position(absolute, 25% 0 null);
+  margin: auto;
+  width: 4.5rem;
+}

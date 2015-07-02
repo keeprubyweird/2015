@@ -1,0 +1,22 @@
+.curtain {
+  @include noise;
+  background-color: $base-background-color;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+
+  @include media($M-up) {
+    @include position(absolute, 0 0 null);
+    box-shadow: 0 0 ($base-spacing * 4) black;
+  }
+}
+
+.curtain-wrapper {
+  position: relative;
+  z-index: 0;
+
+  &.on {
+    @include position(fixed, null null null 0);
+    width: 100%;
+  }
+}

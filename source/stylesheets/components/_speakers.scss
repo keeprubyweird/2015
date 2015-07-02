@@ -1,0 +1,45 @@
+.speakers {
+
+  @include media($M-up) {
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    margin: ($base-spacing * 2) $base-spacing;
+    text-align: center;
+  }
+}
+
+.speaker {
+  color: $white;
+
+  &:hover {
+    .speaker-name {
+      text-shadow: 0 5px 0 rgba($yellow, 0.666), 0 10px 0 rgba($pink, 0.333);
+    }
+  }
+}
+
+.speaker-name {
+  font-weight: $light-weight;
+  letter-spacing: 0.03em;
+  margin-bottom: $small-spacing / 2;
+  text-transform: uppercase;
+  transition: text-shadow 0.5s;
+}
+
+.speaker-role {
+  color: $pink;
+  font-weight: $bold-weight;
+  letter-spacing: 0.1em;
+  margin-top: 0;
+  opacity: 0.666;
+  text-transform: uppercase;
+}
+
+.speaker-photo {
+  @include size(8rem);
+  border-radius: 50%;
+  box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
+}

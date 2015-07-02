@@ -1,0 +1,31 @@
+$min-screen: 384;
+$max-screen: 1600;
+
+$min_font: 14;
+$max_font: 24;
+
+:root {
+  font-size: #{$min_font}px;
+}
+
+@media (min-width: #{$min-screen}px) and (max-width: #{$max-screen}px){
+  :root {
+    font-size: calc( #{$min_font}px + ( #{$max_font} - #{$min_font} ) * ( (100vw - #{$min-screen}px) / ( #{$max-screen} - #{$min-screen}) ));
+  }
+}
+
+@media (min-width: #{$max-screen}px){
+  :root {
+    font-size: #{$max_font}px;
+  }
+}
+
+body {
+  background-color: $base-background-color;
+  margin: 0;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}

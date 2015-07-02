@@ -1,0 +1,10 @@
+doctype html
+html
+  = partial "head"
+
+  body
+    main
+      = partial "hero"
+      = yield
+    = partial "footer"
+    = javascript_include_tag "all"

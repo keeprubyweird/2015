@@ -1,0 +1,36 @@
+article {
+  background-color: $base-background-color;
+  background-image: image-url("noise.png");
+  padding: ($base-spacing * 2) $base-spacing;
+
+  &:nth-of-type(2) {
+    background-color: lighten($base-background-color, 2%);
+  }
+
+  &:nth-of-type(3) {
+    background-color: lighten($base-background-color, 4%);
+  }
+
+  &:nth-of-type(4) {
+    background-color: lighten($base-background-color, 6%);
+  }
+}
+
+.article-content {
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+.article-footer,
+.article-header {
+  padding: $base-spacing;
+  text-align: center;
+}
+
+.article-header {
+  @include vertical-rhythm(0);
+  font-weight: $bold-weight;
+  letter-spacing: 0.25em;
+  text-shadow: 0 1px 0 rgba($base-background-color, 0.444);
+  text-transform: uppercase;
+}

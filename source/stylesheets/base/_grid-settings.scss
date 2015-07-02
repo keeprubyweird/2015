@@ -1,0 +1,13 @@
+@import "neat-helpers";
+
+// Neat Overrides
+// $column: 90px;
+// $gutter: 30px;
+// $grid-columns: 12;
+$max-width: 36rem;
+
+$S: em(384);
+$M: em(768);
+
+$S-up: new-breakpoint(min-width $S);
+$M-up: new-breakpoint(min-width $M);

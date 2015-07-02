@@ -1,0 +1,91 @@
+$vertical-grid-lines: 20;
+$horizontal-grid-lines: 40;
+$grid-line-width: 2px;
+$horizon-duration: 8s;
+$horizon-delay: $horizon-duration / $horizontal-grid-lines;
+
+.horizon {
+  @include position(absolute, 0);
+  background-image: image-url("skyline.png");
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  perspective: 50vh;
+
+  &::after {
+    @include position(absolute, 0);
+    animation: fade-out 10s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: $ease-out-quad;
+    background-color: darken($base-background-color, 10%);
+    content: "";
+  }
+}
+
+.grid {
+  @include position(absolute, 50% null null 50%);
+  @include size(120rem 42vh);
+  margin-left: -60rem;
+  transform: rotateX(75deg);
+  transform-origin: 50% 0 0;
+
+  &::before {
+    @include position(absolute, 0 0 100%);
+    animation: fill-plane 2s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: $ease-in-expo;
+    background: linear-gradient(rgba(black, 0), rgba($pink, 0.5));
+    content: "";
+  }
+}
+
+.line {
+  background-color: rgba($pink, 0.5);
+  backface-visibility: hidden;
+}
+
+.vertical .line {
+  @include position(absolute, 0 null 100%);
+  animation: grow-lines 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: $ease-in-expo;
+  background: linear-gradient(rgba($pink, 0), rgba($pink, 0.777));
+  width: $grid-line-width;
+
+  @for $n from 1 through $vertical-grid-lines {
+    &:nth-child(#{$n}) {
+      left: #{$n / $vertical-grid-lines * 100%};
+    }
+  }
+}
+
+
+.horizontal .line {
+  @include position(absolute, 0 0 null);
+  animation: move-lines $horizon-duration infinite;
+  animation-timing-function: $ease-in-expo;
+  height: $grid-line-width;
+  opacity: 0;
+  z-index: 2;
+
+  @for $n from 1 through $horizontal-grid-lines {
+    &:nth-child(#{$n}) {
+      animation-delay: ($n * $horizon-delay);
+    }
+  }
+}
+
+.keep-ruby {
+  @include position(absolute, 0 0 50%);
+  animation: fade-slide-in 35s;
+  animation-fill-mode: both;
+  background-image: image-url("keep-ruby.png");
+  background-position: center 200%;
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  margin: auto;
+  z-index: 1;
+}

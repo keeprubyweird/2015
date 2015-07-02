@@ -1,0 +1,13 @@
+@mixin noise {
+  position: relative;
+  
+  &::before {
+    @include position(absolute, 0);
+    background-attachment: fixed;
+    background-image: image-url("noise.gif");
+    content: "";
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: $z-noise;
+  }
+}

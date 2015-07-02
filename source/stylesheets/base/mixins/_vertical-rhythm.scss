@@ -1,0 +1,7 @@
+@mixin vertical-rhythm($increment) {
+  $size: modular-scale($increment);
+  $multiplier: ceil($size / $small-spacing);
+
+  font-size: $size;
+  line-height: $small-spacing * $multiplier;
+}

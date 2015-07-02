@@ -1,0 +1,30 @@
+.copy {
+  margin: 0 auto;
+  max-width: $max-width;
+
+  a {
+    box-shadow: 0 1px 0 rgba($yellow, 0.222);
+    color: $yellow;
+  }
+
+  h1 {
+    @include vertical-rhythm(2);
+    font-family: $display-font-family;
+    font-weight: normal;
+    font-size-adjust: 0.495;
+    margin: $base-spacing 0;
+    text-align: center;
+  }
+
+  p {
+    @include vertical-rhythm(0);
+  }
+
+  ol {
+    @extend %default-ol;
+  }
+
+  ul {
+    @extend %default-ul;
+  }
+}

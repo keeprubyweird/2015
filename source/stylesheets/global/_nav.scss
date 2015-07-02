@@ -1,0 +1,31 @@
+.nav {
+  text-align: center;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    color: $yellow;
+    display: block;
+    letter-spacing: 0.1em;
+    padding: ($small-spacing / 2 ) $small-spacing;
+    text-shadow: 0 1px 0 $purple;
+  }
+}
+
+.nav--primary {
+  li {
+    @include vertical-rhythm(1);
+    font-weight: $light-weight;
+    text-transform: uppercase;
+  }
+}
+
+.nav--secondary {
+  li {
+    @include vertical-rhythm(-2);
+    font-weight: $bold-weight;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,52 @@
+// Typography
+$base-font-family: "proxima-nova", $helvetica;
+$heading-font-family: $base-font-family;
+$display-font-family: "proxima-nova", $helvetica;
+
+// Font Sizes
+$base-font-size: 1rem;
+$base-line-height: 1.75;
+
+$modular-scale-base: $base-font-size;
+$modular-scale-ratio: $major-third;
+
+// Line height
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1rem;
+$small-spacing: $base-spacing / 2;
+$fixed-footer-height: 6rem;
+
+// Z Indexes
+$z-noise: 10;
+
+// Colors
+$pink: #d3485a;
+$yellow: #f4e475;
+$purple: #1b1135;
+$dark-purple: #120d27;
+$blue: #477dca;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+$white: #fcfcfc;
+
+// Font Colors
+$base-background-color: $dark-purple;
+$base-font-color: $white;
+$action-color: $yellow;
+
+// Font Weights
+$light-weight: 300;
+$normal-weight: 400;
+$bold-weight: 700;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);

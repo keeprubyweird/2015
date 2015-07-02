@@ -1,0 +1,35 @@
+.hero {
+  background-image: image-url("hero.png");
+  background-position: center bottom;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-noise {
+  @include position(absolute, 0);
+  background-image: image-url("noise.png");
+}
+
+.hero-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: $display-font-family;
+  height: 50vmax;
+  justify-content: space-between;
+  padding: $base-spacing;
+  position: relative;
+  text-align: center;
+}
+
+.hero-date {
+  @include vertical-rhythm(-2);
+  font-weight: $bold-weight;
+  letter-spacing: 0.08em;
+  text-shadow: 0 1px 0 $purple;
+  text-transform: uppercase;
+}
+
+.hero-logo {
+  max-width: 40rem;
+}
