@@ -23,12 +23,17 @@
   text-align: center;
 }
 
-.hero-date {
+.hero-date,
+.hero-location {
   @include vertical-rhythm(-2);
-  font-weight: $bold-weight;
   letter-spacing: 0.08em;
+  margin: ($small-spacing / 2) 0;
   text-shadow: 0 1px 0 $purple;
   text-transform: uppercase;
+}
+
+.hero-location {
+  font-weight: $normal-weight;
 }
 
 .hero-logo {
