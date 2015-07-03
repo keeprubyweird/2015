@@ -26,11 +26,19 @@ article#speakers
   footer.article-footer
     = link_to "Call for Proposals", "cfp.html", class: "btn"
 
+article#mailing-list
+  header.article-header Mailing list
+  .copy
+    form accept-charset="UTF-8" action="https://formkeep.com/f/IvPlxDuumNM" method="POST"
+      label for="email" Email *
+      input type="email" name="email" id="email" required=true
+      button type="submit" Email me
+
 article#schedule
   header.article-header Schedule
   .copy
     markdown:
-      We can’t release a schedule until we select our lineup, but we can say this: we’re adding a second day this year. There will be sandwiches.
+      We can’t release a schedule until we select our lineup, but we can say this: we’re adding a second day of activities this year. There will be sandwiches.
 
 article#sponsors
   header.article-header Sponsors
