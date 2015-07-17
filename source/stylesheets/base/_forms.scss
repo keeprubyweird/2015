@@ -84,4 +84,14 @@ select {
 
 .form-row {
   margin: $base-spacing 0;
+
+  &--inline {
+    display: flex;
+
+    .flexed {
+      flex: 1;
+      margin-right: $base-spacing;
+      width: auto;
+    }
+  }
 }
