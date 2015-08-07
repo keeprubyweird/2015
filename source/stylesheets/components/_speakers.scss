@@ -29,6 +29,10 @@
   transition: text-shadow 0.5s;
 }
 
+.mc {
+  text-transform: none;
+}
+
 .speaker-role {
   color: $pink;
   font-weight: $bold-weight;
