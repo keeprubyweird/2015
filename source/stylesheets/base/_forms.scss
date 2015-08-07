@@ -16,7 +16,6 @@ select {
 label {
   @include vertical-rhythm(-1);
   display: block;
-  font-weight: $bold-weight;
   padding-bottom: $small-spacing;
 
   &.required::after {

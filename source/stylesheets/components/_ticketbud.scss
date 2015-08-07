@@ -1,0 +1,52 @@
+.external#events {
+  color: $white !important;
+
+  h3 {
+    display: none;
+  }
+
+  td,
+  th {
+    border-color: rgba($white, 0.1) !important;
+    padding: $small-spacing 0 !important;
+    width: auto !important;
+  }
+
+  th {
+    &:last-child {
+      text-align: right !important;
+    }
+  }
+
+  .btn {
+    background-color: $pink !important;
+    border-radius: $base-border-radius !important;
+    border: 0 !important;
+    font-size: $base-font-size !important;
+    padding: $small-spacing $base-spacing !important;
+
+    &:hover,
+    &:focus {
+      background-color: shade($pink, 10%) !important;
+    }
+  }
+}
+
+.ticket_quantity_select {
+  float: right;
+}
+
+.promotion {
+  border-bottom: 1px solid rgba($white, 0.1);
+  display: flex;
+  padding-bottom: $small-spacing;
+
+  label {
+    flex: 1;
+  }
+
+  .form-control {
+    flex-basis: 50%;
+    font-size: 0.75rem;
+  }
+}
