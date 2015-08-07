@@ -2,17 +2,6 @@
 title: "Keep Ruby Weird 2015 • Austin, Texas"
 ---
 
-article#tickets
-  header.article-header Tickets
-  .copy
-    script {
-      src="https://s3.amazonaws.com/ticketbud/widgets/tickets.v2.js"
-      class="ticketbud tickets"
-      data-uuid="5e7a7bfc-37a9-11e5-8ef4-97279032dc37"
-      data-host="ticketbud.com"
-      async
-    }
-
 article#speakers
   header.article-header Speakers
   ul.speakers
@@ -32,19 +21,16 @@ article#speakers
         h2.speaker-name Air Bud
         h5.speaker-role Dog
 
-article#mailing-list
-  header.article-header Mailing list
+article#tickets
+  header.article-header Tickets
   .copy
-    form accept-charset="UTF-8" action="https://formkeep.com/f/IvPlxDuumNM" method="POST"
-      .form-row.form-row--inline
-        input type="email" name="email" id="email" placeholder="Email" required=true class="flexed"
-        button type="submit" Email me
-
-article#schedule
-  header.article-header Schedule
-  .copy
-    markdown:
-      We can’t release a schedule until we select our lineup, but we can say this: we’re adding a second day of activities this year. There will be sandwiches.
+    script {
+      src="https://s3.amazonaws.com/ticketbud/widgets/tickets.v2.js"
+      class="ticketbud tickets"
+      data-uuid="5e7a7bfc-37a9-11e5-8ef4-97279032dc37"
+      data-host="ticketbud.com"
+      async
+    }
 
 article#sponsors
   header.article-header Sponsors
@@ -63,3 +49,17 @@ article#sponsors
         = image_tag "thoughtbot.png", alt: "thoughtbot"
   footer.article-footer
     = link_to "Sponsor KRW2015", "prospectus.html", class: "btn"
+
+article#mailing-list
+  header.article-header Mailing list
+  .copy
+    form accept-charset="UTF-8" action="https://formkeep.com/f/IvPlxDuumNM" method="POST"
+      .form-row.form-row--inline
+        input type="email" name="email" id="email" placeholder="Email" required=true class="flexed"
+        button type="submit" Email me
+
+article#schedule
+  header.article-header Schedule
+  .copy
+    markdown:
+      We can’t release a schedule until we select our lineup, but we can say this: we’re adding a second day of activities this year. There will be sandwiches.
