@@ -5,21 +5,12 @@ title: "Keep Ruby Weird 2015 • Austin, Texas"
 article#speakers
   header.article-header Speakers
   ul.speakers
-    li
-      = link_to "https://twitter.com/sandimetz", class: "speaker" do
-        = image_tag "sandi-metz.jpg", class: "speaker-photo"
-        h2.speaker-name Sandi Metz
-        h5.speaker-role Keynote
-    li
-      = link_to "https://twitter.com/tenderlove", class: "speaker" do
-        = image_tag "aaron-patterson.jpg", class: "speaker-photo"
-        h2.speaker-name Aaron Patterson
-        h5.speaker-role Emcee
-    li
-      = link_to "https://twitter.com/patio11", class: "speaker" do
-        = image_tag "patrick-mckenzie.jpg", class: "speaker-photo"
-        h2.speaker-name Patrick M<span class="mc">c</span>Kenzie
-        h5.speaker-role Keynote
+    - data.speakers.each do |speaker|
+      li
+        = link_to speaker.url, class: "speaker" do
+          = image_tag speaker.photo, class: "speaker-photo"
+          h2.speaker-name = speaker.name
+          h5.speaker-role = speaker.role
 
 article#tickets
   header.article-header Tickets
