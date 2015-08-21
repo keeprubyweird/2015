@@ -26,18 +26,10 @@ article#tickets
 article#sponsors
   header.article-header Sponsors
   ul.sponsors
-    li
-      = link_to "http://getharvest.com" do
-        = image_tag "harvest.png", alt: "Harvest"
-    li
-      = link_to "http://heroku.com" do
-        = image_tag "heroku.png", alt: "Heroku"
-    li
-      = link_to "http://sharethrough.com" do
-        = image_tag "sharethrough.png", alt: "Sharethrough"
-    li
-      = link_to "http://thoughtbot.com" do
-        = image_tag "thoughtbot.png", alt: "thoughtbot"
+    - data.sponsors.each do |sponsor|
+      li
+        = link_to sponsor.url do
+          = image_tag sponsor.image, alt: sponsor.name
   footer.article-footer
     = link_to "Sponsor KRW2015", "prospectus.html", class: "btn"
 
