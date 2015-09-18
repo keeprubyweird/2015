@@ -22,6 +22,14 @@ article#sponsors
   footer.article-footer
     = link_to "Sponsor KRW2015", "prospectus.html", class: "btn"
 
+article#schedule
+  header.article-header Schedule
+  ol.schedule
+    - data.schedule.each do |event|
+      li.event
+        h4.event-title = event.title
+        h5.event-time #{event.start} – #{event.end}
+
 article#mailing-list
   header.article-header Mailing list
   .copy
@@ -29,9 +37,3 @@ article#mailing-list
       .form-row.form-row--inline
         input type="email" name="email" id="email" placeholder="Email" required=true class="flexed"
         button type="submit" Email me
-
-article#schedule
-  header.article-header Schedule
-  .copy
-    markdown:
-      We can’t release a schedule until we select our lineup, but we can say this: we’re adding a second day of activities this year. There will be sandwiches.

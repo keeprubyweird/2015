@@ -6,7 +6,7 @@
   li {
     flex-grow: 1;
     flex-basis: 12rem;
-    margin: ($base-spacing * 2) $base-spacing;
+    margin: $base-spacing;
     text-align: center;
   }
 }
@@ -27,10 +27,6 @@
   margin-bottom: $small-spacing / 2;
   text-transform: uppercase;
   transition: text-shadow 0.5s;
-}
-
-.mc {
-  text-transform: none;
 }
 
 .speaker-role {

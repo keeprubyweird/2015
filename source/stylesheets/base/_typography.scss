@@ -29,6 +29,11 @@ h3 {
 }
 
 h5 {
+  @include vertical-rhythm(0);
+  margin: $small-spacing 0;
+}
+
+h5 {
   @include vertical-rhythm(-2);
   margin: $small-spacing 0;
 }

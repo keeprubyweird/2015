@@ -1,0 +1,23 @@
+.schedule {
+  text-align: center;
+}
+
+.event {
+  margin: $base-spacing;
+}
+
+.event-title {
+  font-weight: $light-weight;
+  letter-spacing: 0.03em;
+  margin-bottom: $small-spacing / 4;
+  text-transform: uppercase;
+}
+
+.event-time {
+  color: $pink;
+  font-weight: $bold-weight;
+  letter-spacing: 0.1em;
+  margin: 0;
+  opacity: 0.666;
+  text-transform: uppercase;
+}
