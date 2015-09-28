@@ -1,16 +1,18 @@
--
-  name: Harvest
-  url: http://getharvest.com
-  image: harvest.png
--
-  name: Heroku
-  url: http://heroku.com
-  image: heroku.png
--
-  name: Sharethrough
-  url: http://sharethrough.com
-  image: sharethrough.png
--
-  name: thoughtbot
-  url: http://thoughtbot.com
-  image: thoughtbot.png  
+big:
+  -
+    name: Sharethrough
+    url: http://sharethrough.com
+    image: sharethrough.png
+normal:
+  -
+    name: Harvest
+    url: http://getharvest.com
+    image: harvest.png
+  -
+    name: Heroku
+    url: http://heroku.com
+    image: heroku.png
+  -
+    name: thoughtbot
+    url: http://thoughtbot.com
+    image: thoughtbot.png

@@ -14,8 +14,13 @@ article#speakers
 
 article#sponsors
   header.article-header Sponsors
+  ul.big.sponsors
+    - data.sponsors.big.each do |sponsor|
+      li
+        = link_to sponsor.url do
+          = image_tag sponsor.image, alt: sponsor.name
   ul.sponsors
-    - data.sponsors.each do |sponsor|
+    - data.sponsors.normal.each do |sponsor|
       li
         = link_to sponsor.url do
           = image_tag sponsor.image, alt: sponsor.name
