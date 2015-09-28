@@ -3,11 +3,23 @@ big:
     name: Sharethrough
     url: http://sharethrough.com
     image: sharethrough.png
+  -
+    name: Hired
+    url: https://hired.com/?utm_source=events&utm_medium=ATXKRW
+    image: hired.png
 normal:
   -
     name: Harvest
     url: http://getharvest.com
     image: harvest.png
+  -
+    name: moove-it
+    url: http://moove-it.com
+    image: moove-it.png
+  -
+    name: Spice Madam
+    url: http://spicemadam.com
+    image: spice-madam.png
   -
     name: Heroku
     url: http://heroku.com
