@@ -2,29 +2,37 @@ big:
   -
     name: Sharethrough
     url: http://sharethrough.com
-    image: sharethrough.png
+    slug: sharethrough
   -
     name: Hired
     url: https://hired.com/?utm_source=events&utm_medium=ATXKRW
-    image: hired.png
+    slug: hired
 normal:
   -
     name: Harvest
     url: http://getharvest.com
-    image: harvest.png
+    slug: harvest
   -
     name: moove-it
     url: http://moove-it.com
-    image: moove-it.png
+    slug: moove-it
   -
     name: Spice Madam
     url: http://spicemadam.com
-    image: spice-madam.png
+    slug: spice-madam
   -
     name: Heroku
     url: http://heroku.com
-    image: heroku.png
+    slug: heroku
   -
     name: thoughtbot
     url: http://thoughtbot.com
-    image: thoughtbot.png
+    slug: thoughtbot
+  -
+    name: Capital Factory
+    url: http://capitalfactory.com
+    slug: capital-factory
+  -
+    name: Sticker Mule
+    url: http://stickermule.com
+    slug: stickermule

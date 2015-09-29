@@ -1,4 +1,6 @@
 .sponsors {
+  display: flex;
+  flex-wrap: wrap;
 
   @include media($M-up) {
     align-items: center;
@@ -7,6 +9,8 @@
   }
 
   li {
+    flex-grow: 1;
+    flex-basis: 9rem;
     margin: ($base-spacing * 2) $base-spacing;
   }
 
@@ -15,10 +19,19 @@
     margin: auto;
     max-height: 5rem;
     max-width: 8rem;
+
+    &.spice-madam {
+      height: 4rem;
+    }
   }
 
   &.big img {
     max-height: 9rem;
     max-width: 12rem;
+
+    &.hired {
+      height: 2rem;
+      max-width: inherit;
+    }
   }
 }

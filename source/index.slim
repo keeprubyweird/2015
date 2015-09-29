@@ -18,12 +18,12 @@ article#sponsors
     - data.sponsors.big.each do |sponsor|
       li
         = link_to sponsor.url do
-          = image_tag sponsor.image, alt: sponsor.name
+          = image_tag sponsor.slug + ".png", alt: sponsor.name, class: sponsor.slug
   ul.sponsors
     - data.sponsors.normal.each do |sponsor|
       li
         = link_to sponsor.url do
-          = image_tag sponsor.image, alt: sponsor.name
+          = image_tag sponsor.slug + ".png", alt: sponsor.name, class: sponsor.slug
   footer.article-footer
     = link_to "Sponsor KRW2015", "prospectus.html", class: "btn"
 
