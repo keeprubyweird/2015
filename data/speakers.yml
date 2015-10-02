@@ -14,6 +14,11 @@
   role: Keynote
   url: https://twitter.com/patio11
 -
+  name: Marcus J. Carey
+  photo: marcus-carey.jpg
+  role: Speaker
+  url: https://twitter.com/marcusjcarey
+-
   name: Ernie Miller
   photo: ernie-miller.jpg
   role: Speaker
@@ -33,11 +38,6 @@
   photo: will-leinweber.jpg
   role: Speaker
   url: https://twitter.com/leinweber
--
-  name: Franck Verrot
-  photo: franck-verrot.jpg
-  role: Speaker
-  url: https://twitter.com/franckverrot
 -
   name: Christophe Philemotte
   photo: christophe-philemotte.jpg
