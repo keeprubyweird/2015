@@ -9,17 +9,21 @@ big:
     slug: hired
 normal:
   -
-    name: Harvest
-    url: http://getharvest.com
-    slug: harvest
-  -
     name: moove-it
     url: http://moove-it.com
     slug: moove-it
   -
-    name: Spice Madam
-    url: http://spicemadam.com
-    slug: spice-madam
+    name: SpiceWorks
+    url: http://www.spiceworks.com/
+    slug: spiceworks
+  -
+    name: Harvest
+    url: http://getharvest.com
+    slug: harvest
+  -
+    name: Sticker Mule
+    url: http://stickermule.com
+    slug: stickermule
   -
     name: Heroku
     url: http://heroku.com
@@ -29,10 +33,10 @@ normal:
     url: http://thoughtbot.com
     slug: thoughtbot
   -
+    name: Spice Madam
+    url: http://spicemadam.com
+    slug: spice-madam
+  -
     name: Capital Factory
     url: http://capitalfactory.com
     slug: capital-factory
-  -
-    name: Sticker Mule
-    url: http://stickermule.com
-    slug: stickermule
